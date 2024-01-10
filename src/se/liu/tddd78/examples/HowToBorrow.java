@@ -12,15 +12,16 @@ import se.liu.jonkv82.annotations.BorrowedCode;
     och metoder separat, men vi vill ändå visa var markeringen ska placeras
     i alla dessa fall.
 
-    Mer information kommer på websidorna inför projektstarten.
+    Mer information finns på
+    https://www.ida.liu.se/~TDDD78/labs/2024/project/borrowing.
  */
 
 @BorrowedCode(source = "Somewhere")
-public class HowToBorrowInTheFuture
+public class HowToBorrow
 {
     @BorrowedCode(source = "Somewhere") private int x = 10;
 
-    @BorrowedCode(source = "Somewhere") public HowToBorrowInTheFuture() {
+    @BorrowedCode(source = "Somewhere") public HowToBorrow() {
     }
 
     /**

@@ -243,7 +243,6 @@ fabric.properties
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
@@ -464,6 +463,11 @@ cython_debug/
 # Poetry local configuration file - https://python-poetry.org/docs/configuration/#local-configuration
 poetry.toml
 
+# ruff
+.ruff_cache/
+
+# LSP config files
+pyrightconfig.json
 
 ### Vim ###
 # Swap
