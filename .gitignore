@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/java,python,intellij,emacs,vim,visualstudiocode,libreoffice,linux,macos,windows,eclipse
-# Edit at https://www.toptal.com/developers/gitignore?templates=java,python,intellij,emacs,vim,visualstudiocode,libreoffice,linux,macos,windows,eclipse
+# Created by https://www.toptal.com/developers/gitignore/api/vim,java,emacs,linux,macos,python,eclipse,windows,intellij,libreoffice,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=vim,java,emacs,linux,macos,python,eclipse,windows,intellij,libreoffice,visualstudiocode
 
 ### Eclipse ###
 .metadata
@@ -534,4 +534,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/java,python,intellij,emacs,vim,visualstudiocode,libreoffice,linux,macos,windows,eclipse
+# End of https://www.toptal.com/developers/gitignore/api/vim,java,emacs,linux,macos,python,eclipse,windows,intellij,libreoffice,visualstudiocode
