@@ -4,14 +4,14 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 
-public class TetrisViewer
+public class TetrisViewerOld
 {
     private Board board;
     private JFrame frame;
-    private JTextArea textArea;
+    private  JTextArea textArea;
     private BoardToTextConverter boardToTextConverter;
 
-    public TetrisViewer(Board board){
+    public TetrisViewerOld(Board board){
 	this.board = board;
 	this.frame = new JFrame("Tetris");
 	this.textArea = new JTextArea(board.getHeight(), board.getWidth());

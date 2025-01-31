@@ -1,7 +1,5 @@
 package se.liu.vicny135.tetris;
 
-import javax.swing.*;
-import java.awt.event.ActionEvent;
 import java.util.Random;
 
 public class Board
@@ -38,6 +36,7 @@ public class Board
 	    }
 	}
     }
+
 
     public SquareType getVisibleSquareAt(int row, int col){
 	if (falling == null) {

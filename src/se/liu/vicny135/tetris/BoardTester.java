@@ -5,9 +5,15 @@ public class BoardTester
     public static void main(String[] args) {
 	Board board = new Board(10, 12);
 
+	// Timer
+	TetrisViewerOld tetrisViewer = new TetrisViewerOld(board);
+	tetrisViewer.start();
+
 	// Test GUI with text
+	/*
 	TetrisViewer tetrisViewer = new TetrisViewer(board);
-	tetrisViewer.show();
+	tetrisViewer.show();*/
+
 
 	/*
 	// Test board with still falling poly in text

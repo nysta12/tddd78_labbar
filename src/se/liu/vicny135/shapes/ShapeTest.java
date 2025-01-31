@@ -2,11 +2,12 @@ package se.liu.vicny135.shapes;
 
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.List;
 
 public class ShapeTest
 {
     public static void main(String[] args) {
-	final ArrayList<Shape> shapes = new ArrayList<>();
+	final List<Shape> shapes = new ArrayList<>();
 	Circle circle1 = new Circle(1, 1, 1, Color.red);
 	Circle circle2 = new Circle(2, 2, 2, Color.blue);
 	Circle circle3 = new Circle(3, 3, 3, Color.green);
@@ -24,7 +25,7 @@ public class ShapeTest
 	shapes.add(text1);
 	shapes.add(text2);
 	for (Shape shape : shapes) {
-
+	    //shape.draw();
 	}
     }
 }
