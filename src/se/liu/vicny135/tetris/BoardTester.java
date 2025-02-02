@@ -3,10 +3,10 @@ package se.liu.vicny135.tetris;
 public class BoardTester
 {
     public static void main(String[] args) {
-	Board board = new Board(10, 12);
+	Board board = new Board(12, 18);
 
 	// Timer
-	TetrisViewerOld tetrisViewer = new TetrisViewerOld(board);
+	TetrisViewer tetrisViewer = new TetrisViewer(board);
 	tetrisViewer.start();
 
 	// Test GUI with text

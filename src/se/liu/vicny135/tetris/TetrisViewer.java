@@ -8,21 +8,20 @@ public class TetrisViewer
 {
     private Board board;
     private JFrame frame;
-    private JTextArea textArea;
-    private BoardToTextConverter boardToTextConverter;
+    private TetrisComponent tetrisComponent;
+
 
     public TetrisViewer(Board board){
 	this.board = board;
-	this.frame = new JFrame("Tetris");
-	this.textArea = new JTextArea(board.getHeight(), board.getWidth());
-	this.boardToTextConverter = new BoardToTextConverter();
+	frame = new JFrame("Tetris");
+	tetrisComponent = new TetrisComponent(board);
+	board.addBoardListeners(tetrisComponent);
     }
 
     public void start(){
-	setUpFrame();
 	final Action doOneStep = new AbstractAction() {
 	    @Override public void actionPerformed(final ActionEvent e) {
-		board.randomBoard();
+		board.tick();
 		show();
 	    }
 	};
@@ -33,15 +32,8 @@ public class TetrisViewer
 	show();
     }
 
-    public void setUpFrame(){
-	frame.setLayout(new BorderLayout());
-	frame.add(textArea, BorderLayout.CENTER);
-    }
-
     public void show(){
-	textArea.setText(boardToTextConverter.convertToText(board));
-	frame.add(textArea, BorderLayout.CENTER);
-	textArea.setFont(new Font("Monospaced", Font.PLAIN, 20));
+	frame.add(tetrisComponent, BorderLayout.CENTER);
 	frame.pack();
 	frame.setVisible(true);
     }

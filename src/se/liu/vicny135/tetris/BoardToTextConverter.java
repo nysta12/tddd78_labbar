@@ -4,9 +4,12 @@ public class BoardToTextConverter
 {
     public String convertToText(Board board){
 	StringBuilder str = new StringBuilder();
-	for (int row = 0; row < board.getHeight(); row ++){
-	    for (int col = 0; col < board.getWidth(); col ++){
-		switch (board.getVisibleSquareAt(row, col)){
+	for (int row = 0; row < board.getHeight() + 4; row ++){
+	    for (int col = 0; col < board.getWidth() + 4; col ++){
+		switch (board.getSquareType(row, col)){
+		    case OUTSIDE:
+			str.append("!");
+			break;
 		    case EMPTY:
 			str.append("-");
 			break;
