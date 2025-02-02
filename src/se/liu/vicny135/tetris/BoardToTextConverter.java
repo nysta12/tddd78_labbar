@@ -2,10 +2,11 @@ package se.liu.vicny135.tetris;
 
 public class BoardToTextConverter
 {
+    private final static int DOUBLE_MARGIN = 4;
     public String convertToText(Board board){
 	StringBuilder str = new StringBuilder();
-	for (int row = 0; row < board.getHeight() + 4; row ++){
-	    for (int col = 0; col < board.getWidth() + 4; col ++){
+	for (int row = 0; row < board.getHeight() + DOUBLE_MARGIN; row ++){
+	    for (int col = 0; col < board.getWidth() + DOUBLE_MARGIN; col ++){
 		switch (board.getSquareType(row, col)){
 		    case OUTSIDE:
 			str.append("!");

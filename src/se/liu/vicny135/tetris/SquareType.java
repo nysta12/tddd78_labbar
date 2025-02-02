@@ -12,7 +12,7 @@ public enum SquareType
             String str = ("%d: %s");
             int randomNumber = rnd.nextInt(SquareType.values().length);
             SquareType randomSquareType = SquareType.values()[randomNumber];
-            System.out.println(String.format(str, i, randomSquareType));
+            //System.out.println(String.format(str, i, randomSquareType));
         }
     }
 }

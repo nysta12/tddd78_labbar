@@ -7,14 +7,12 @@ import java.awt.event.ActionEvent;
 public class TetrisViewerOld
 {
     private Board board;
-    private JFrame frame;
-    private  JTextArea textArea;
+    private JFrame frame = null;
+    private  JTextArea textArea = null;
     private BoardToTextConverter boardToTextConverter;
 
     public TetrisViewerOld(Board board){
 	this.board = board;
-	this.frame = new JFrame("Tetris");
-	this.textArea = new JTextArea(board.getHeight(), board.getWidth());
 	this.boardToTextConverter = new BoardToTextConverter();
     }
 
@@ -34,6 +32,8 @@ public class TetrisViewerOld
     }
 
     public void setUpFrame(){
+	frame = new JFrame("Tetris");
+	textArea = new JTextArea(board.getHeight(), board.getWidth());
 	frame.setLayout(new BorderLayout());
 	frame.add(textArea, BorderLayout.CENTER);
     }
