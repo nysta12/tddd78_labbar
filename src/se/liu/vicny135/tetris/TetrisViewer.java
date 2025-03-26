@@ -33,6 +33,7 @@ public class TetrisViewer
 	JFrame frame = new JFrame("Tetris");
 	frame.add(tetrisComponent, BorderLayout.CENTER);
 	frame.pack();
+	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	frame.setVisible(true);
     }
 }

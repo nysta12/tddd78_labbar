@@ -170,7 +170,7 @@ public class Board
 		    if (direction == Direction.RIGHT) {
 			newPoly.getPoly()[c][falling.getWidth() - 1 - r] = oldPoly.getPoly()[r][c];
 		    } else {
-			newPoly.getPoly()[falling.getHeight()-1-c][r] = oldPoly.getPoly()[r][c];
+			newPoly.getPoly()[falling.getHeight() - 1 - c][r] = oldPoly.getPoly()[r][c];
 		    }
 		}
 	    }
@@ -223,12 +223,5 @@ public class Board
 		}
 	    }
 	}
-    }
-
-    public static void main(String[] args) {
-	Board board = new Board(10, 12);
-	System.out.println(board.getWidth());
-	System.out.println(board.getHeight());
-
     }
 }
